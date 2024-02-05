@@ -1,38 +1,103 @@
-.App {
-  text-align: center;
+* {
+  font-family: "Noto Sans TC";
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.welcome-container {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  gap: 20px;
+  padding-top: 20px;
+  padding-bottom: 100px;
+  background: #E2E2E2;
 }
 
-.App-link {
-  color: #61dafb;
+.header {
+  display: flex;
+  padding-left: 100px;
+  align-items: center;
+  gap: 20px;
+  align-self: stretch;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.header span {
+  color: #0E3480;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 75px; /* 117.188% */
+  letter-spacing: 6.4px;
+}
+
+.header img {
+  width: 70px;
+  height: 81px;
+}
+
+.intro-container {
+  display: flex;
+  width: 1200px;
+  padding: 20px;
+  flex-direction: column;
+  align-items: flex-start;
+  border-radius: 16px;
+  background: 
+    linear-gradient(0deg, rgba(0, 0, 0, 0.20) 0%,
+    rgba(0, 0, 0, 0.20) 100%),
+    url('../public/main.jpg'),
+    lightgray 50% / cover no-repeat;
+}
+
+.blur {
+  display: flex;
+  padding: 24px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 10px;
+  align-self: stretch;
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.10);
+  backdrop-filter: blur(4px);
+}
+
+#welcome-header{
+  height: 60px;
+  align-self: stretch;
+  color: #FFF;
+  font-size: 54px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 60px;
+  letter-spacing: 4.5px;
+}
+
+#welcome-text{
+  color: #F2F2F2;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 40px; /* 200% */
+  letter-spacing: 2px;
+}
+
+#link-bar{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 34px;
+  align-self: stretch;
+}
+
+.link-icon {
+  width: 30px;
+  height: 30px;
+  opacity: 0.8;
+}
+
+.link-icon:hover {
+  opacity: 1;
+  transform: scale(1.2);
+  cursor: pointer;
 }
